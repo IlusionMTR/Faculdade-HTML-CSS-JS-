@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+</head>
+
+<body>
+
+    <div class="section">
+        <h2>Lista de Produtos</h2>
+
+        <table border="1">
+            <tr>
+                <th>Produtos</th>
+                <th>Preços</th>
+                <th>Qtd. Estoque</th>
+            </tr>
+
+            <tr>
+                <td>Notebook</td>
+                <td>R$ 3500,00</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>Monitor</td>
+                <td>R$ 1199,00</td>
+                <td>27</td>
+            </tr>
+
+            <tr>
+                <td>Teclado Gamer</td>
+                <td>R$ 370,00</td>
+                <td>19</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Formulário do Pedido</h2>
+
+    <form action="pedido.html" method="post">
+        <label for="cliente">Nome do Cliente:</label><br>
+        <input type="text" id="cliente" name="cliente" required><br><br>
+
+        <label for="produto">Produto Desejado:</label><br>
+        <select id="produto" name="produto" required>
+            <option value="Notebook">Notebook</option>
+            <option value="Monitor">Monitor</option>
+            <option value="Teclado Gamer">Teclado Gamer</option>
+        </select><br><br>
+
+        <label for="quantidade">Quantidade:</label><br>
+        <input type="number" id="quantidade" name="quantidade" min="1" required><br><br>
+
+        <input type="submit" value="Enviar Pedido">
+    </form>
+
+</body>
+
+</html>
